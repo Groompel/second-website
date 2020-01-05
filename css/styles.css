@@ -1,15 +1,15 @@
 body {
-    margin: 0;
-    text-align: center;
     font-family: 'Merriweather', serif;
+    margin: 0;
     overflow-x:hidden;
+    text-align: center;
 }
 
 h1 { 
+    color: #188e9b;
     font-family: 'Sacramento', cursive;
     font-size: 5.625rem;
     margin: 50px auto 0 auto;
-    color: #188e9b;
 }
 
 h2 {
@@ -21,23 +21,25 @@ h3 {
     color: #0fabbc;
     font-size: 1.5rem;
     font-family: 'Montserrat', sans-serif;
+    margin-top: 0;
 }
 a {
     color: #0fabbc;
 }
 
 hr{
+   
     border: none;
-    border-top: 1rem dotted #fc627e;
-    width: 5rem;
+    border-top: 0.5rem dotted #fc627e;
     margin: 3rem auto 3rem auto;
+    width: 5rem;
 }
 
 .top-container {
     background-color: #e5f3f7;
+    color: #0fabbc;
     padding-top: 10%;
     position: relative;
-    color: #0fabbc;
 }
 
 .top-container h2 {
@@ -62,27 +64,37 @@ hr{
 }
 
 .middle-container img { 
-    width: 15%;
-    padding-top: 0rem;
     border-radius: 50%;
     display: inline-block;
+    padding-top: 0rem;
+    width: 25%;
+}
+
+.middle-container .profile .profile-image {
+    display: block;
+    margin: 0 auto;
+    width: 15%;
+}
+
+.skills {
+    margin: 0 auto 0 auto;
+    width: 50%;
 }
 
 .middle-container .skills .skill-row .description{
-    text-align: left;
-    vertical-align: top;
     display: inline-block;
-    width: 40rem;
     margin: 0 1rem 0 1rem;
+    text-align: center;
+    vertical-align: top;
+    width: 70%;
 }
-
 
 .middle-container .contact-me .btn {
     background-color: #fc627e;
-    padding: 0.8rem;
     color: white;
-    text-decoration: none;
     opacity: 0.8;
+    padding: 0.8rem;
+    text-decoration: none;
 }
 
 .middle-container .contact-me .btn:hover {
@@ -90,13 +102,13 @@ hr{
 }
 
 .middle-container .contact-me .btn:active{
-    opacity: 1;
     background-color: #d6526a;
+    opacity: 1;
 }
 
 .bottom-container {
-    padding: 2rem 0 1rem 0;
     background-color: #0fabbc;
+    padding: 2rem 0 1rem 0;
 }
 .bottom-container a {
     color: #e5f3f7;
@@ -110,5 +122,8 @@ hr{
 .bottom-container .social-links li {
     display: inline-block;
     margin: 0 0.5rem 0 0.5rem;
+}
+.bottom-container .social-links li:hover {
+    background-color: #45bcc9;
 }
 
